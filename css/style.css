@@ -1,0 +1,64 @@
+@font-face{ /* Load custom font */
+	font-family: "Source Sans Pro";
+	src: url(../fonts/SourceSansPro-Light.otf) format("OpenType");
+}
+body {
+	font-family: Source Sans Pro;
+}
+nav {
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	font-size: 14px;
+}
+
+nav ul li a{
+	display: block;
+	float: left;
+	padding: 3px 6px;
+	color: #575c7d;
+	/*border-radius: 3px;*/
+	text-decoration: none;
+	margin: 0;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	background: #deff90;
+	color: #48530f;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px 6px;
+	margin: 0;
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	color: #666666;
+}
+section {
+	margin: 20px;
+}
+
+section#first{
+	background: #FF0066;
+	text-align: center;
+	padding: 20px;
+}
+
+section#second{
+	background: #CC99FF;
+}
+
+section#third{
+	background: #99CCFF;
+}
