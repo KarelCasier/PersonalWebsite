@@ -1,64 +1,132 @@
-@font-face{ /* Load custom font */
-	font-family: "Source Sans Pro";
-	src: url(../fonts/SourceSansPro-Light.otf) format("OpenType");
+/*
+    red: #E73F3F
+    orange: #F76C27
+    yellow: #E7E737
+    blue: #6D9DD1
+    purple: #7E45D3
+*/
+
+
+
+@font-face
+{
+    /* Load custom font */
+    font-family: 'Source Sans Pro';
+
+    src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
 }
-body {
-	font-family: Source Sans Pro;
+
+header
+{
+    color: white;
+    background: 
+linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
+linear-gradient(63deg, transparent 74%, #999 78%), 
+linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), 
+#444;
+background-size: 16px 48px;
 }
-nav {
-	display: block;
-	margin-bottom: 10px;
+header h1
+{
+	margin: 0px;
+}
+
+nav
+{
 	text-align: center;
+    width: 600px;
+    height: auto;
+    margin: 0px auto;
+	background-color: #E73F3F;
 }
 
-nav ul {
-	list-style: none;
-	font-size: 14px;
+nav ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
 }
 
-nav ul li a{
-	display: block;
-	float: left;
-	padding: 3px 6px;
-	color: #575c7d;
-	/*border-radius: 3px;*/
-	text-decoration: none;
-	margin: 0;
-	font-weight: bold;
+nav ul li
+{
+	color:#000000;
+	width: 100px;
+	display: inline;
 }
 
-nav ul li a:hover {
-	background: #deff90;
-	color: #48530f;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	padding: 3px 6px;
-	margin: 0;
-	text-decoration: none;
+nav ul li a
+{
+	text-decoration:none;
+	padding: 5px;
 }
 
-h1 {
-	text-align: center;
+nav ul li a:hover
+{
+	text-decoration:none;
+	background-color: #70B7FF;
 }
 
-p {
-	color: #666666;
-}
-section {
-	margin: 20px;
+nav ul li a:active
+{
+	text-decoration:none;
+	background-color: #94CFFF;
 }
 
-section#first{
-	background: #FF0066;
-	text-align: center;
+h1
+{
+    text-align: center;
+}
+
+p
+{
+    color: #666;
+    padding: 0px;
+}
+
+body
+{
+    font-family: Source Sans Pro;
+	background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+section
+{
 	padding: 20px;
 }
 
-section#second{
-	background: #CC99FF;
+section#first
+{
+    
+
+    text-align: center;
+
+    background-color: #F76C27;
 }
 
-section#third{
-	background: #99CCFF;
+section#second
+{
+    background-color: #E7E737;
+}
+
+section#third
+{
+    background-color: #7E45D3;
+}
+
+footer
+{
+    float: left;
+
+    width: 100%;
+
+    text-align: center;
+
+    background-color: #6D9DD1;
 }
