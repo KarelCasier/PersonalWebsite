@@ -1,0 +1,63 @@
+/*
+    red: #E73F3F
+    orange: #F76C27
+    yellow: #E7E737
+    blue: #6D9DD1
+    purple: #7E45D3
+*/
+
+
+@font-face
+{
+    /* Load custom font */
+    font-family: 'Source Sans Pro';
+
+    src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
+}
+
+body
+{
+    font-family: Source Sans Pro;
+
+    background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+#core
+{
+    left: 50px;
+
+    width: 30%;
+    height: auto;
+    margin: 30% auto;
+    padding: 20px;
+
+    text-align: center;
+
+    color: white;
+    background-color: rgba(0,0,0,.7);
+    border: 0px;
+}
+
+nav ul
+{
+    padding: 0;
+
+    list-style: none;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    text-decoration: none;
+}
