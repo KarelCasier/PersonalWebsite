@@ -45,6 +45,18 @@ img
     max-height: 100%;
 }
 
+#notice
+{
+    position: absolute;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 200%;
+    left: 0px;
+    right: 0px;
+    color: white;
+
+}
+
 
 .circularProfile
 {
@@ -94,13 +106,6 @@ img
     height: 96%;
 
     background-color: rgba(0,0,0,.5);
-
-          //  filter: blur(3px);
-    //-webkit-filter: blur(3px);
-    //   -moz-filter: blur(3px);
-   //      -o-filter: blur(3px);
-    //    -ms-filter: blur(3px);
-    //        filter: url(blur.svg#blur);
 }
 
 #core
@@ -128,8 +133,9 @@ img
     position: relative;
 
     padding: 30px;
+    width: 80%;
 
-    //margin-left: 50%;
+    margin: 0px auto;
 }
 
 footer
@@ -189,14 +195,14 @@ nav ul li
 
 nav ul li a
 {
-    text-decoration: none;
+    text-decoration: line-through;
 
     color: rgb(255,255,255);
 }
 
 nav ul li a:hover
 {
-    text-decoration: none;
+    text-decoration: line-through;
 
     color: rgb(200,200,200);
 }
