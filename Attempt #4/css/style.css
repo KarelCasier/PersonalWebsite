@@ -1,0 +1,199 @@
+/*
+    red: #E73F3F
+    orange: #F76C27
+    yellow: #E7E737
+    blue: #6D9DD1
+    purple: #7E45D3
+*/
+*
+{
+    /* Ensures padding do not 'extend' the box beyond the set width and height
+        ie. internal padding*/
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+	padding: 10px 0 10px 0;
+	font-size: 17px;
+	color: rgba(26,26,26,.6);
+}
+
+.genericHeader
+{
+	font-size: 18px;
+}
+
+.clearfix
+{
+    /* Fix for floating elements going past the height of the div */
+    overflow: auto;
+    zoom: 1;
+}
+
+.absoluteCenter
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.vertCenter
+{
+	position: relative;
+    top: 50%;
+
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+}
+
+
+@font-face
+{
+    /* Load custom font */
+    font-family: 'Source Sans Pro';
+
+    src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
+}
+
+#headerName
+{
+	position: absolute;
+	font-size: 150%;
+}
+
+body
+{
+    font-family: Source Sans Pro;
+}
+
+section
+{
+    width: 100%;
+}
+
+.header
+{
+	position: absolute;
+	padding: 0 20px 0 20px;
+    height: 100px;
+	color: white;
+    background-color: rgba(10, 10, 10, .2);
+}
+
+.topBanner
+{
+	color: white;
+	background-image: url(../images/diagmonds.png);
+	height: 500px;
+}
+
+.discWrapper
+{
+	position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.generic
+{
+    width: 100%;
+    height: 400px;
+}
+
+#bodyWrapper
+{
+	line-height: 1.6em;
+	/background-color: rgb(220, 220, 220);
+}
+
+#aboutMe
+{
+	text-align: center;
+	width: 60%;
+}
+
+footer
+{
+	font-size: 17px;
+}
+
+#footer
+{
+	color: white;
+	bottom: 0;
+	padding: 10px;
+	height:100px;
+	width: 100%;
+    background-color: #1F1F1F;
+}
+
+#preFooter
+{
+	height: 50px;
+	width: 100%;
+	background-color: #333333;
+}
+
+nav ul
+{
+	right: 0;
+	position: absolute;
+	list-style: none;
+	 top: 50%;
+
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+}
+
+nav ul li
+{
+    display: inline;
+
+    margin: auto 10px;
+    padding: 10px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+
+    color: rgb(255,255,255);
+}
+
+nav ul li a:hover
+{
+    text-decoration: none;
+
+    color: rgb(200,200,200);
+}
+
+.footerImageLink
+{
+	top:5px;
+    width: 25px;
+    height: 25px;
+}
+
+#GithubLogo
+{
+    background-image: url(../images/GithubLogoWhite.png);
+}
+#linkedinLogo
+{
+    background-image: url(../images/linkedinLogoWhite.png);
+}
