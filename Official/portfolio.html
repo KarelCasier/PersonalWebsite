@@ -10,17 +10,17 @@
 	<link rel="stylesheet" media="(max-width: 500px)" href="css/mobile.css">
 </head>
 <body>
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script>
-$(function(){
-  $('a').each(function() {
-    if ($(this).prop('href') == window.location.href) {
-      $(this).addClass('current');
-    }
-  });
-});
-</script>
-<div class="topBannerBackground"></div>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script>
+	$(function(){
+	$('a').each(function() {
+	if ($(this).prop('href') == window.location.href) {
+	$(this).addClass('current');
+	}
+	});
+	});
+	</script>
+	<div class="topBannerBackground"></div>
 	<section class="header">
 		<header>
 			<div id="headerName" class="vertCenter">Karel Casier</div>
@@ -36,49 +36,74 @@ $(function(){
 	<section class="topBanner">
 		<div class="discWrapper">
 			Take a look through some of my<br>
-			<div 
-			<style style="
-			margin: 10px 0;
-			font-size: 200%;">
-			PROJECTS
+			<div
+				<style style="
+				margin: 10px 0;
+				font-size: 200%;">
+				PROJECTS
 			</div>
 			
 		</div>
 	</section>
 	
-	<section id="bodyWrapper">
-		<section class="generic">
-			<section id="aboutMe" class="absoluteCenter">
+	<section id="bodyWrapper" class="clearfix">
+		<section class="smallGeneric">
+			<section class="genericText absoluteCenter">
 				<div class="genericHeader">My Code</div>
 				<p>Below you will find some of my work I've done over the past year. Each project has detailed descriptions and language used.</p>
 			</section>
 		</section>
 		<div class="line-separator absoluteCenter"></div>
-		<section class="generic">
-			<section id="aboutMe" class="absoluteCenter">
-				<div class="genericHeader">Notice</div>
-				<p>This page is on its' way sooon</p>
+		<section class="autoGeneric">
+			<div class="genericHeader horzCenter">Projects</div>
+			<section class="projectsContainer horzCenter blur">
+				<a href="projects/untitledspacegame.html">
+					<img src="images/SpaceGame.png" class="projectBox">
+				</a>
+				<a href="projects/gameoflife.html">
+					<img src="images/GameofLife.png" class="projectBox">
+				</a>
+				<a href="projects/asteroids.html">
+					<img src="images/Asteroids.png" class="projectBox">
+				</a>
+				<a href="projects/bomberman.html">
+					<img src="images/Bomberman.png" class="projectBox">
+				</a>
+				<a href="projects/minigolf.html">
+					<img src="images/Minigolf.png" class="projectBox">
+				</a>
+				<a href="projects/tictactoe.html">
+					<img src="images/TicTacToe.png" class="projectBox">
+				</a>
+				<!-- Broken Text Below Image
+				<div class="projectBox">
+					<img src="images/dark_wood.png" class="projectBoxImage">
+					<div class="blurimage-text">
+					Testing
+					</div>
+				</div>
+				-->
 			</section>
 		</section>
 	</section>
 	<footer>
 		<section id="preFooter">
 			<div class="absoluteCenter">
-				<a href="https://github.com/KarelCasier">
-					<img src="images/GithubLogoWhite.png" class="footerImageLink">
-				</a>
-				<a href="https://ca.linkedin.com/pub/karel-casier/a7/65b/a98">
-					<img src="images/LinkedinLogoWhite.png" class="footerImageLink">
-				</a>
+					<a href="https://github.com/KarelCasier">
+									<img src="images/GithubLogoWhite.png" class="footerImageLink">
+					</a>
+					<a href="https://ca.linkedin.com/pub/karel-casier/a7/65b/a98">
+									<img src="images/LinkedinLogoWhite.png" class="footerImageLink">
+					</a>
 			</div>
 		</section>
 		<section id="footer">
 			<div id="footerText" class="absoluteCenter">
-				&#169; 2015 Karel Casier<br>
-				<span style="display:block; height: 20px;"></span>
-				<div id="smallFooterText">
-					<a href="mailto:karelcasier@protonmail.com">KarelCasier@protonmail.com</a>
-				</div>
+					&#169; 2015 Karel Casier<br>
+					<span style="display:block; height: 20px;"></span>
+					<div id="smallFooterText">
+									<a href="mailto:karelcasier@protonmail.com">Karel1Casier@gmail.com</a>
+					</div>
 			</div>
 		</section>
 	</footer>
