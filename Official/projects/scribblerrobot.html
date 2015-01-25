@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title> Karel Casier </title>
+	<meta name="discription" content = "Website of Karel Casier">
+	<meta name="keywords" content="Karel Caier, Software Engineer, University of Waterloo, UWaterloo, C, C++, HTML, CSS">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Karel Casier">
+	<link rel="stylesheet" media="(min-width: 500px)" href="../css/desktop.css">
+	<link rel="stylesheet" media="(max-width: 500px)" href="../css/mobile.css">
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script>
+	$(function(){
+	$('a').each(function() {
+	if ($(this).prop('href') == window.location.href) {
+	$(this).addClass('current');
+	}
+	});
+	});
+	</script>
+	<div class="topBannerBackground"></div>
+	<section class="header">
+		<header>
+			<div id="headerName" class="vertCenter">Karel Casier</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../portfolio.html">Portfolio</a></li>
+					<li><a href="../files/KarelCasier_Resume.pdf">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+	</section>
+	<section class="topBanner">
+		<div class="discWrapper">
+		<br/> <!--Prevents white bar at top -->
+			<div
+				<style style="
+				margin: 10px 0;
+				font-size: 200%;">
+				SCRIBBLER ROBOT
+			</div>
+			<div class="whiteP">Group Project</div>
+		</div>
+	</section>
+	
+	<section id="bodyWrapper" class="clearfix">
+		<section class="mediumGeneric">
+			<section class="genericText absoluteCenter">
+				<div class="genericHeader">Project Summary</div>
+				<p>Demo mark of 106.25% for going above and beyond: By building an iPhone application that receives voice commands, and communicates, via Redis Pub/Sub, with various Python scripts, we turned our <a href="https://en.wikipedia.org/wiki/Scribbler_%28robot%29">Scribbler Robot</a> into a Scribbler "Buddy" that can tell you jokes, give you the weather forecast, look for and follow certain colours, make 1 degree precise turns using the phone compass and even let you drive it with the Myo armband. My personal contributions were the initial command server crawling (before switching to reddis for speed reasons), image processing, color interpretation and object finding algorithm. <br/>
+				Personal code contribution available to view on <a href="https://github.com/nguld/ScribbleBot/tree/Karel's-Branch">Github</a><br/>
+				Final code available to view <a href="https://github.com/nguld/ScribbleBot">here</a></p>
+				<div class="minorGenericHeader">Tech Used</div>
+				<p>Python with the <a href="http://wiki.roboteducation.org/Myro_Reference_Manual">Myro</a> library</p>
+			</section>
+		</section>
+		<div class="line-separator absoluteCenter"></div>
+		<section class="autoGeneric">
+			<div class="genericText horzCenter">
+				<div class="genericHeader">Details</div>
+				<p>
+				For this project, we had to program a scribbler robot. We chose to program it in such a way that it is easy to interact with. Able to take voice commands, "Buddy" can perform a variety of tasks. You can give him commands without even touching your keyboard! If asked, Buddy can recognize and find objects of certain colours for you, point you in the right direction if you're lost, or interact with you and follow your hand gestures. If you are sad, Buddy will even cheer you up with a joke!
+				</p>
+				<p>
+				Before coding anything, we as a group discussed the best approach to take for this project. In order to do this effectively, we executed the computational decision making method. The computational decision making table really helped us figure out which ideas were viable based on the criteria we appointed ourselves to follow. Ideas such as drawing graphs of functions and following lines were discarded due to our constraints. After coming to a conclusion, we conceived the idea of Buddy based on the functions that were selected.
+				</p>
+				<p>
+				In order for Buddy to be brought to life, a number of requirements had to be met.There were also some criteria that had to be met and constraints that limited us, such as the capabilities of our robot. There were some hardships along the way of this project; these included adjusting to a new language and dealing with inaccurate aspects of the Scribbler. We however collectively overcame these obstacles and worked great together, we developed experience using new tools and programming languages, and we produced a polished functional robot!
+				</p>
+			</div>
+		</section>
+		<div class="line-separator absoluteCenter"></div>
+		<section class="autoGeneric">
+			<div class="genericText horzCenter">
+			<div class="genericHeader">
+				Photos
+			</div>
+			</div>
+		</section>
+	</section>
+	<footer>
+		<section id="preFooter">
+			<div class="absoluteCenter">
+					<a href="https://github.com/KarelCasier">
+										<img src="../images/GithubLogoWhite.png" class="footerImageLink">
+					</a>
+					<a href="https://www.linkedin.com/in/karelcasier">
+										<img src="../images/LinkedinLogoWhite.png" class="footerImageLink">
+					</a>
+			</div>
+		</section>
+		<section id="footer">
+			<div id="footerText" class="absoluteCenter">
+					&#169; 2015 Karel Casier<br>
+					<span style="display:block; height: 20px;"></span>
+					<div id="smallFooterText">
+										<a href="mailto:karelcasier@protonmail.com">Karel1Casier@gmail.com</a>
+					</div>
+			</div>
+		</section>
+	</footer>
+</body>

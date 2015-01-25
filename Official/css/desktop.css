@@ -25,6 +25,16 @@ p
     color: rgba(26,26,26,.7);
 }
 
+p a 
+{
+    text-decoration: none;
+}
+
+p a:hover
+{
+    color: grey;
+}
+
 .whiteP
 {
     font-size: 17px;
@@ -87,10 +97,21 @@ p
     src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
 }
 
-.borderedButton
+.borderedButton-white
 {
+    display: inline;
     width: 80px;
-    margin: 20px 0;
+}
+
+.borderedButton-white a
+{
+     -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+    width: 80px;
+    margin: 20px 5px;
     padding: 5px 5px;
 
     text-decoration: none;
@@ -101,12 +122,45 @@ p
     background-color: transparent;
 }
 
-.borderedButton:hover
+.borderedButton-white a:hover
 {
     color: black;
     border: 2px solid;
     border-color: white;
     background-color: white;
+}
+
+.borderedButton-black
+{
+    display: inline;
+    width: 80px;
+}
+
+.borderedButton-black a
+{
+     -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+    width: 80px;
+    margin: 20px 5px;
+    padding: 5px 5px;
+
+    text-decoration: none;
+
+    color: black;
+    border: 2px solid;
+    border-color: black;
+    background-color: transparent;
+}
+
+.borderedButton-black a:hover
+{
+    color: white;
+    border: 2px solid;
+    border-color: black;
+    background-color: black;
 }
 
 #headerName
@@ -163,6 +217,13 @@ section
         -ms-filter: grayscale(100%);
 }
 
+.buttonsUnderTopBanner
+{
+    position: absolute;
+    top: 450px;
+    height: 100px;
+}
+
 .discWrapper
 {
     position: relative;
@@ -191,6 +252,12 @@ section
 {
     width: 100%;
     height: 250px;
+}
+
+.mediumGeneric
+{
+    width: 100%;
+    height: 600px;
 }
 
 .genericText
@@ -275,6 +342,11 @@ nav ul li
 
 nav ul li a
 {
+     -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
     padding: 36px 15px;
 
     text-decoration: none;

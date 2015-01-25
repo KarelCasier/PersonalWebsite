@@ -1,0 +1,410 @@
+/*
+    red: #E73F3F
+    orange: #F76C27
+    yellow: #E7E737
+    blue: #6D9DD1
+    purple: #7E45D3
+*/
+*
+{
+    /* Ensures padding do not 'extend' the box beyond the set width and height
+        ie. internal padding*/
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    font-size: 17px;
+
+    padding: 10px 0 10px 0;
+
+    color: rgba(26,26,26,.7);
+}
+
+.whiteP
+{
+    font-size: 17px;
+
+    padding: 10px 0 10px 0;
+
+    color: rgba(226,226,226,.7);
+}
+
+.genericHeader
+{
+    font-size: 19px;
+
+    margin-top: 20px;
+}
+
+.clearfix
+{
+    /* Fix for floating elements going past the height of the div */
+    overflow: auto;
+    zoom: 1;
+}
+
+.absoluteCenter
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.vertCenter
+{
+    position: relative;
+    top: 50%;
+
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+}
+
+.horzCenter
+{
+    position: relative;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+
+@font-face
+{
+    /* Load custom font */
+    font-family: 'Source Sans Pro';
+
+    src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
+}
+
+.borderedButton
+{
+    width: 80px;
+    margin: 20px 0;
+    padding: 5px 5px;
+
+    text-decoration: none;
+
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    background-color: transparent;
+}
+
+.borderedButton:hover
+{
+    color: black;
+    border: 2px solid;
+    border-color: white;
+    background-color: white;
+}
+
+#headerName
+{
+    font-size: 150%;
+    left: 30px;
+    position: absolute;
+}
+
+body
+{
+    font-family: Source Sans Pro;
+}
+
+section
+{
+    width: 100%;
+}
+
+.header
+{
+    position: absolute;
+
+    height: 100px;
+    padding: 0 20px 0 20px;
+
+    color: white;
+    background-color: rgba(10, 10, 10, .3);
+}
+
+.topBanner
+{
+    height: 450px;
+
+    color: white;
+}
+
+.topBannerBackground
+{
+    position: absolute;
+
+    width: 100%;
+    height: 450px;
+
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;            /* optionally, center the image */
+    background-size: cover;                      /* <------ */
+
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+}
+
+.discWrapper
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.generic
+{
+    width: 100%;
+    height: 500px;
+}
+
+.autoGeneric
+{
+    width: 100%;
+    min-height: 500px;
+}
+
+.smallGeneric
+{
+    width: 100%;
+    height: 250px;
+}
+
+.genericText
+{
+    width: 50%;
+}
+
+.minorGenericHeader
+{
+    font-size: 18px;
+}
+
+#bodyWrapper
+{
+    font-size: 150%;
+    line-height: 1.6em;
+}
+
+#aboutMe
+{
+    width: 50%;
+}
+
+footer
+{
+    font-size: 17px;
+}
+
+#footer
+{
+    bottom: 0;
+
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+
+    color: white;
+    background-color: #1f1f1f;
+}
+
+#smallFooterText
+{
+    font-size: 75%;
+
+    text-decoration: none;
+}
+
+#smallFooterText a
+{
+    text-decoration: none;
+
+    color: white;
+}
+
+
+
+#preFooter
+{
+    width: 100%;
+    height: 40px;
+
+    background-color: #333;
+}
+
+nav ul
+{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+
+    list-style: none;
+
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+}
+
+nav ul li
+{
+    display: inline;
+}
+
+nav ul li a
+{
+    padding: 36px 15px;
+
+    text-decoration: none;
+
+    color: rgb(255,255,255);
+}
+
+nav ul li a:hover
+{
+    text-decoration: none;
+
+    color: rgb(200,200,200);
+    border-bottom: 3px solid rgb(200,200,200);
+}
+
+nav ul li a.current
+{
+    border-bottom: 3px solid white;
+}
+
+.footerImageLink
+{
+    width: 25px;
+    height: 25px;
+    margin: 2px 5px;
+
+    text-decoration: none;
+}
+
+#GithubLogo
+{
+    background-image: url(../images/GithubLogoWhite.png);
+}
+#linkedinLogo
+{
+    background-image: url(../images/linkedinLogoWhite.png);
+}
+
+::selection
+{
+    color: #fff; /* WebKit/Blink Browsers */
+    background-color: #000;
+}
+::-moz-selection
+{
+    color: #fff; /* Gecko Browsers */
+    background-color: #000;
+}
+
+.line-separator
+{
+    width: 70%;
+    height: 1px;
+    margin-top: 10px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.projectsContainer
+{
+    float: left;
+
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+.projectsContainer a
+{
+    text-decoration: none;
+}
+
+.projectBox
+{
+    display: inline;
+
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+
+    text-decoration: none;
+}
+
+.projectBoxImage
+{
+    display: inline-block;
+}
+
+.blur
+{
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+.blurimage-text
+{
+    position: relative;
+
+    width: 200px;
+
+    text-align: center;
+}
+
+.swfEmbed
+{
+    margin: 20px 0px;
+}
+
+/*
+.blur img:hover
+{
+    color: white;
+
+    -webkit-filter: blur(0px);
+       -moz-filter: blur(0px);
+         -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+            filter: url(blur.svg#blur);
+}
+.blur img
+{
+    -webkit-filter: blur(2px);
+       -moz-filter: blur(2px);
+         -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+            filter: url(blur.svg#blur);
+}
+*/

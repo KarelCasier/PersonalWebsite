@@ -1,0 +1,256 @@
+/*
+    red: #E73F3F
+    orange: #F76C27
+    yellow: #E7E737
+    blue: #6D9DD1
+    purple: #7E45D3
+*/
+*
+{
+    /* Ensures padding do not 'extend' the box beyond the set width and height
+        ie. internal padding*/
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+	padding: 10px 0 10px 0;
+	font-size: 17px;
+	color: rgba(26,26,26,.6);
+}
+
+.genericHeader
+{
+	font-size: 18px;
+}
+
+.clearfix
+{
+    /* Fix for floating elements going past the height of the div */
+    overflow: auto;
+    zoom: 1;
+}
+
+.absoluteCenter
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.vertCenter
+{
+	position: relative;
+    top: 50%;
+
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+}
+
+
+@font-face
+{
+    /* Load custom font */
+    font-family: 'Source Sans Pro';
+
+    src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
+}
+
+.borderedButton
+{
+    border-color: white;
+    border: 2px;
+}
+
+#headerName
+{
+	position: absolute;
+	font-size: 150%;
+}
+
+body
+{
+    font-family: Source Sans Pro;
+    /font-size: 75%;
+}
+
+section
+{
+    width: 100%;
+}
+
+.header
+{
+	position: absolute;
+	padding: 0 20px 0 20px;
+    height: 100px;
+	color: white;
+    background-color: rgba(10, 10, 10, .3);
+}
+
+.topBanner
+{
+    height: 450px;
+
+    color: white;
+}
+
+.topBannerBackground
+{
+    position: absolute;
+
+    width: 100%;
+    height: 450px;
+
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;            /* optionally, center the image */
+    background-size: cover;                      /* <------ */
+
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+}
+
+.discWrapper
+{
+	position: relative;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.generic
+{
+    width: 100%;
+    height: 500px;
+}
+
+#bodyWrapper
+{
+	line-height: 1.6em;
+	/background-color: rgb(220, 220, 220);
+}
+
+#aboutMe
+{
+	width: 50%;
+}
+
+footer
+{
+	font-size: 17px;
+}
+
+#footer
+{
+	color: white;
+	bottom: 0;
+	padding: 10px;
+	height:100px;
+	width: 100%;
+    background-color: #1F1F1F;
+}
+
+#preFooter
+{
+	height: 50px;
+	width: 100%;
+	background-color: #333333;
+}
+#smallFooterText
+{
+    text-decoration: none;
+    font-size: 75%;
+}
+
+#smallFooterText a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#footerText
+{
+}
+
+nav ul
+{
+    right: 20px;
+	position: absolute;
+	list-style: none;
+	top: 50%;
+
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+}
+
+nav ul li
+{
+    /display: inline;
+
+    /margin: auto 5px;
+    padding: 5px;
+    text-align: right;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+
+    color: rgb(255,255,255);
+}
+
+nav ul li a:hover
+{
+    text-decoration: none;
+
+    color: rgb(200,200,200);
+}
+
+.footerImageLink
+{
+	top:5px;
+    width: 25px;
+    height: 25px;
+}
+
+#GithubLogo
+{
+    background-image: url(../images/GithubLogoWhite.png);
+}
+#linkedinLogo
+{
+    background-image: url(../images/linkedinLogoWhite.png);
+}
+
+::selection {
+  background-color: #000;
+color: #fff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background-color: #000;
+color: #fff; /* Gecko Browsers */
+}
+.line-separator
+{
+    width: 70%;
+    height: 1px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
