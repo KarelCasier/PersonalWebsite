@@ -12,21 +12,43 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-
     margin: 0;
     padding: 0;
 }
 
 p
 {
-	padding: 10px 0 10px 0;
-	font-size: 17px;
-	color: rgba(26,26,26,.6);
+    font-size: 17px;
+
+    padding: 10px 0 10px 0;
+
+    color: rgba(26,26,26,.7);
+}
+
+p a
+{
+    text-decoration: none;
+}
+
+p a:hover
+{
+    color: grey;
+}
+
+.whiteP
+{
+    font-size: 17px;
+
+    padding: 10px 0 10px 0;
+
+    color: rgba(226,226,226,.7);
 }
 
 .genericHeader
 {
-	font-size: 18px;
+    font-size: 19px;
+
+    margin-top: 20px;
 }
 
 .clearfix
@@ -49,11 +71,21 @@ p
 
 .vertCenter
 {
-	position: relative;
+    position: relative;
     top: 50%;
 
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
+}
+
+.horzCenter
+{
+    position: relative;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    text-align: center;
 }
 
 
@@ -65,22 +97,82 @@ p
     src: url(../fonts/SourceSansPro-Light.otf) format('OpenType');
 }
 
-.borderedButton
+.borderedButton-white
 {
+    display: inline;
+    width: 80px;
+}
+
+.borderedButton-white a
+{
+     -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+    width: 80px;
+    margin: 20px 5px;
+    padding: 5px 5px;
+
+    text-decoration: none;
+
+    color: white;
+    border: 2px solid;
     border-color: white;
-    border: 2px;
+    background-color: transparent;
+}
+
+.borderedButton-white a:hover
+{
+    color: black;
+    border: 2px solid;
+    border-color: white;
+    background-color: white;
+}
+
+.borderedButton-black
+{
+    display: inline;
+    width: 80px;
+}
+
+.borderedButton-black a
+{
+     -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+    width: 80px;
+    margin: 20px 5px;
+    padding: 5px 5px;
+
+    text-decoration: none;
+
+    color: black;
+    border: 2px solid;
+    border-color: black;
+    background-color: transparent;
+}
+
+.borderedButton-black a:hover
+{
+    color: white;
+    border: 2px solid;
+    border-color: black;
+    background-color: black;
 }
 
 #headerName
 {
-	position: absolute;
-	font-size: 150%;
+    font-size: 150%;
+    left: 30px;
+    position: absolute;
 }
 
 body
 {
     font-family: Source Sans Pro;
-    /font-size: 75%;
 }
 
 section
@@ -90,10 +182,12 @@ section
 
 .header
 {
-	position: absolute;
-	padding: 0 20px 0 20px;
+    position: absolute;
+
     height: 100px;
-	color: white;
+    padding: 0 20px 0 20px;
+
+    color: white;
     background-color: rgba(10, 10, 10, .3);
 }
 
@@ -123,9 +217,17 @@ section
         -ms-filter: grayscale(100%);
 }
 
+.buttonsUnderTopBanner
+{
+    //position: absolute;
+    //top: 500px;
+    //height: 100px;
+    margin-top: 40px;
+}
+
 .discWrapper
 {
-	position: relative;
+    position: relative;
     top: 50%;
     left: 50%;
 
@@ -141,60 +243,94 @@ section
     height: 500px;
 }
 
+.autoGeneric
+{
+    width: 100%;
+    min-height: 500px;
+    padding: 20px 0px;
+}
+
+.smallGeneric
+{
+    width: 100%;
+    height: 250px;
+}
+
+.mediumGeneric
+{
+    width: 100%;
+    height: 600px;
+}
+
+.genericText
+{
+    width: 95%;
+}
+
+.minorGenericHeader
+{
+    font-size: 18px;
+}
+
 #bodyWrapper
 {
-	line-height: 1.6em;
-	/background-color: rgb(220, 220, 220);
+    font-size: 150%;
+    line-height: 1em;
 }
 
 #aboutMe
 {
-	width: 50%;
+    width: 95%;
 }
 
 footer
 {
-	font-size: 17px;
+    margin-top: 50px;
+    font-size: 17px;
 }
 
 #footer
 {
-	color: white;
-	bottom: 0;
-	padding: 10px;
-	height:100px;
-	width: 100%;
-    background-color: #1F1F1F;
+    bottom: 0;
+
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+
+    color: white;
+    background-color: #1f1f1f;
 }
 
-#preFooter
-{
-	height: 50px;
-	width: 100%;
-	background-color: #333333;
-}
 #smallFooterText
 {
-    text-decoration: none;
     font-size: 75%;
+
+    text-decoration: none;
 }
 
 #smallFooterText a
 {
     text-decoration: none;
+
     color: white;
 }
 
-#footerText
+
+
+#preFooter
 {
+    width: 100%;
+    height: 40px;
+
+    background-color: #333;
 }
 
 nav ul
 {
     right: 20px;
-	position: absolute;
-	list-style: none;
-	top: 50%;
+    position: absolute;
+    list-style: none;
+    top: 50%;
 
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
@@ -225,9 +361,11 @@ nav ul li a:hover
 
 .footerImageLink
 {
-	top:5px;
     width: 25px;
     height: 25px;
+    margin: 2px 5px;
+
+    text-decoration: none;
 }
 
 #GithubLogo
@@ -239,18 +377,103 @@ nav ul li a:hover
     background-image: url(../images/linkedinLogoWhite.png);
 }
 
-::selection {
-  background-color: #000;
-color: #fff; /* WebKit/Blink Browsers */
+::selection
+{
+    color: #fff; /* WebKit/Blink Browsers */
+    background-color: #000;
 }
-::-moz-selection {
-  background-color: #000;
-color: #fff; /* Gecko Browsers */
+::-moz-selection
+{
+    color: #fff; /* Gecko Browsers */
+    background-color: #000;
 }
+
 .line-separator
 {
     width: 70%;
     height: 1px;
+    margin-top: 10px;
 
     border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
+
+.projectsContainer
+{
+    float: left;
+
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+.projectsContainer a
+{
+    text-decoration: none;
+}
+
+.projectBox
+{
+    display: inline;
+
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+
+    text-decoration: none;
+}
+
+.projectBoxImage
+{
+    display: inline-block;
+}
+
+.blur
+{
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+.blurimage-text
+{
+    position: relative;
+
+    width: 200px;
+
+    text-align: center;
+}
+
+.swfEmbed
+{
+    margin: 20px 0px;
+}
+
+iframe
+{
+    width: 100%;
+}
+
+/*
+.blur img:hover
+{
+    color: white;
+
+    -webkit-filter: blur(0px);
+       -moz-filter: blur(0px);
+         -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+            filter: url(blur.svg#blur);
+}
+.blur img
+{
+    -webkit-filter: blur(2px);
+       -moz-filter: blur(2px);
+         -o-filter: blur(2px);
+        -ms-filter: blur(2px);
+            filter: url(blur.svg#blur);
+}
+*/
