@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Karel Casier </title>
+    <meta name="discription" content="Website of Karel Casier">
+    <meta name="keywords" content="Karel Caier, Software Engineer, University of Waterloo, UWaterloo, C, C++, HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Karel Casier">
+    <link rel="stylesheet" media="(min-width: 500px)" href="../css/desktop.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="../css/mobile.css">
+</head>
+
+<body>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function() {
+            $('a').each(function() {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('current');
+                }
+            });
+        });
+    </script>
+    <div class="topBannerBackground"></div>
+    <section class="header">
+        <header>
+            <div id="headerName" class="vertCenter">Karel Casier</div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a>
+                    </li>
+                    <li><a href="../portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a href="../files/KarelCasier_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section class="topBanner">
+        <div class="discWrapper">
+            <br/>
+            <!--Prevents white bar at top -->
+            <div <style style="
+                margin: 10px 0;
+                font-size: 200%;">
+                Particle Simulator
+            </div>
+        </div>
+    </section>
+
+    <section id="bodyWrapper" class="clearfix">
+        <section class="smallGeneric">
+            <section class="genericText absoluteCenter">
+                <div class="genericHeader">Project Summary</div>
+                <p>A particle simulator that is capable of handling up to 250,000 particles at once smoothly. This was a mini project written in 2 days.</br>
+                    Code available to view on <a href="https://github.com/KarelCasier/Particle-Simulation">Github</a>
+                </p>
+                <div class="minorGenericHeader">Tech Used</div>
+                <p>C++ | <a href="http://www.sfml-dev.org/">SFML</a>
+                </p>
+            </section>
+        </section>
+        <div class="line-separator absoluteCenter"></div>
+        <section class="autoGeneric">
+            <div class="genericText horzCenter">
+                <div class="buttonsUnderTopBanner">
+                    <div class="borderedButton-black">
+                        <a href="../files/Particle Simulator Win32.zip">Windows Download</a>
+                    </div>
+                    <div class="borderedButton-black">
+                        <a href="../files/Particle Simulator.app.zip">OSX Download</a>
+                    </div>
+                </div>
+                <div class="genericHeader">Details</div>
+                <p>A vertex array is used to draw the particles using a class similar to gl_points.</p>
+                <p> You can directly interact with the particles using the mouse (either attract or repel) or indirectly by placing effectors (gravity well or repulsor)</p>
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+                    .tg td {
+                        font-size: 14px;
+                        padding: 10px 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        overflow: hidden;
+                        word-break: normal;
+                    }
+                    .tg th {
+                        font-size: 14px;
+                        font-weight: normal;
+                        padding: 10px 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        overflow: hidden;
+                        word-break: normal;
+                    }
+                    .tg .tg-s6z2 {
+                        text-align: center
+                    }
+                    .tg .tg-30rh {
+                        font-style: italic;
+                        text-align: center
+                    }
+                    .tg .tg-093g {
+                        font-weight: bold;
+                        font-style: italic;
+                        text-align: center
+                    }
+                    .tg .tg-hgcj {
+                        font-weight: bold;
+                        text-align: center
+                    }
+                </style>
+                <table class="tg horzCenter" style="undefined;table-layout: fixed; width: 367px">
+                    <colgroup>
+                        <col style="width: 116px">
+                            <col style="width: 251px">
+                    </colgroup>
+                    <tr>
+                        <th class="tg-hgcj" colspan="2">Controls</th>
+                    </tr>
+                    <tr>
+                        <td class="tg-093g">Key</td>
+                        <td class="tg-hgcj">Action</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">M</td>
+                        <td class="tg-s6z2">Change Mode</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">Left Click ( In Direct Mode )</td>
+                        <td class="tg-s6z2">Attract Particles</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">Right Click ( In Direct Mode )</td>
+                        <td class="tg-s6z2">Repel Particles</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">Left Click ( In Indirect Mode )</td>
+                        <td class="tg-s6z2">Add Gravity Well</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">Right Click ( In Indirect Mode )</td>
+                        <td class="tg-s6z2">Add Repulsor</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">C</td>
+                        <td class="tg-s6z2">Clear Effectors</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">R</td>
+                        <td class="tg-s6z2">Reset Particles</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">W</td>
+                        <td class="tg-s6z2">Toggle Particle Screen Wrapping</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">D</td>
+                        <td class="tg-s6z2">Toggle Particle Drag</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">Right Arrow</td>
+                        <td class="tg-s6z2">Increase Particle Count</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-30rh">Left Arrow</td>
+                        <td class="tg-s6z2">Decrease Particle Count</td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+        <div class="line-separator absoluteCenter"></div>
+        <section class="autoGeneric">
+            <div class="genericText horzCenter">
+                <div class="genericHeader">
+                    Media
+                </div>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/JrofHDttvYs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <section id="preFooter">
+            <div class="absoluteCenter">
+                <a href="https://github.com/KarelCasier">
+                    <img src="../images/GithubLogoWhite.png" class="footerImageLink">
+                </a>
+                <a href="https://www.linkedin.com/in/karelcasier">
+                    <img src="../images/LinkedinLogoWhite.png" class="footerImageLink">
+                </a>
+            </div>
+        </section>
+        <section id="footer">
+            <div id="footerText" class="absoluteCenter">
+                &#169; 2015 Karel Casier
+                <br>
+                <span style="display:block; height: 20px;"></span>
+                <div id="smallFooterText">
+                    <a href="mailto:Karel1Casier@gmail.com">Karel1Casier@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
