@@ -56,11 +56,25 @@
             </section>
         </section>
         <div class="line-separator absoluteCenter"></div>
-        <section class="smallGeneric">
+        <section class="autoGeneric">
             <div class="genericText horzCenter">
                 <div class="genericHeader">Details</div>
-                <p>
-                <p>Vertexarrays are used to draw the building, the perspective comes from manipulating the points of the vertex array. More info coming soon.</p>
+                <p>All rendered in 2D using vertex arrays to draw the building, the perspective comes from manipulating the verticies of the vertex array for each object based on camera position, object height and z-position. The objects are then sorted by distance from camera location before rendering to ensure closer objects are drawn over further objects.</p>
+                <p>Each object transforms it's own verticies so the engine is quite easy to add new objects. Simply creating a new object with a position, dimentions, z position(how high off the ground) and which texture to use is all that is needed.</p>
+                <p>The example below shows a simple city containing a few different objects: buildings, building tunnels, lamp posts and sign panels.</p>
+
+                <p>Download Demo</p>
+                <div class="buttonsUnderTopBanner">
+					<div class="borderedButton-black">
+						<a href="../files/Faux 3D Demo win32 - Karel Casier.zip">Windows Download</a>
+					</div>
+                    <div class="borderedButton-black">
+						<a href="../files/Faux 3D Demo OSX - Karel Casier.zip">OSX Download</a>
+					</div>
+				</div>
+                <p>Controls</p>
+                <p> Move: Arrow Keys or WASD </p>
+                <p> Zoom: Q and E </p>
             </div>
         </section>
         <div class="line-separator absoluteCenter"></div>
@@ -69,6 +83,8 @@
             <div class="genericHeader">
                 Media
             </div>
+            <iframe src="http://gfycat.com/ifr/SociableDeepAfricanwilddog" frameborder="0" scrolling="no" width="600" height="338" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IsiUEOCpEWg" frameborder="0" allowfullscreen></iframe>
             <iframe src="http://gfycat.com/ifr/NastyRawBlackfly" frameborder="0" scrolling="no" width="640" height="360" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
             </div>
         </section>
