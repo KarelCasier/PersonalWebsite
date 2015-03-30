@@ -170,6 +170,12 @@ p a:hover
     position: absolute;
 }
 
+#headerName a
+{
+    text-decoration: none;
+    color: white;
+}
+
 body
 {
     font-family: Source Sans Pro;

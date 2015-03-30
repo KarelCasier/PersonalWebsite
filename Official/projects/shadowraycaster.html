@@ -40,7 +40,7 @@
                 <style style="
                 margin: 10px 0;
                 font-size: 200%;">
-                Faux 3D Renderer
+                Raycasted Shadows
             </div>
         </div>
     </section>
@@ -49,8 +49,8 @@
         <section class="smallGeneric">
             <section class="genericText absoluteCenter">
                 <div class="genericHeader">Project Summary</div>
-                <p>A test using vertex arrays to fake 3d perspective of buildings.</br>
-                Code available to view on <a href="https://github.com/KarelCasier/Faux3D-Buildings">Github</a></p>
+                <p>A raycasting project that can create a shadow for any convex polygon</br>
+                Code available to view on <a href="https://github.com/KarelCasier/2D-Raycast-Shadows">Github</a></p>
                 <div class="minorGenericHeader">Tech Used</div>
                 <p>C++ | <a href="http://www.sfml-dev.org/">SFML</a></p>
             </section>
@@ -59,22 +59,13 @@
         <section class="autoGeneric">
             <div class="genericText horzCenter">
                 <div class="genericHeader">Details</div>
-                <p>All rendered in 2D using vertex arrays to draw the building, the perspective comes from manipulating the verticies of the vertex array for each object based on camera position, object height and z-position. The objects are then sorted by distance from camera location before rendering to ensure closer objects are drawn over further objects.</p>
-                <p>Each object transforms it's own verticies so the engine is quite easy to add new objects. Simply creating a new object with a position, dimentions, z position(how high off the ground) and which texture to use is all that is needed.</p>
-                <p>The example below shows a simple city containing a few different objects: buildings, building tunnels, lamp posts and sign panels.</p>
-
-                <p>Download Demo</p>
-                <div class="buttonsUnderTopBanner">
-					<div class="borderedButton-black">
-						<a href="../files/Faux 3D Demo win32 - Karel Casier.zip">Windows Download</a>
-					</div>
-                    <div class="borderedButton-black">
-						<a href="../files/Faux 3D Demo OSX - Karel Casier.zip">OSX Download</a>
-					</div>
-				</div>
-                <p>Controls</p>
-                <p> Move: Arrow Keys or WASD </p>
-                <p> Zoom: Q and E </p>
+                <p> Using rays, a shadow can be computed for any convex polygon with any number of verticies.</p>
+                <p> Steps: (see gif below for a visual representation) </br>
+                    1) Create a line through each vertex of the polygon </br>
+                    2) Compute intersection points of each line on the edges of the polygon and the edges of the screen </br>
+                    3) Sort all points clockwise to create a convex hull </br>
+                    4) Fill in shape with black </br>
+                    5) (optional) Offest intersection points on the edges to show some of the shape beneath</p>
             </div>
         </section>
         <div class="line-separator absoluteCenter"></div>
@@ -83,10 +74,9 @@
             <div class="genericHeader">
                 Media
             </div>
-            <iframe src="http://gfycat.com/ifr/SociableDeepAfricanwilddog" frameborder="0" scrolling="no" width="600" height="338" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IsiUEOCpEWg" frameborder="0" allowfullscreen></iframe>
-            <iframe src="http://gfycat.com/ifr/NastyRawBlackfly" frameborder="0" scrolling="no" width="640" height="360" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
-            </div>
+            <iframe src="http://gfycat.com/ifr/PlasticRashCopperbutterfly" frameborder="0" scrolling="no" width="960" height="562" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+            <iframe src="http://gfycat.com/ifr/EasygoingFondClumber" frameborder="0" scrolling="no" width="598" height="334" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+            <iframe src="http://gfycat.com/ifr/CleverBlueAlpineroadguidetigerbeetle" frameborder="0" scrolling="no" width="380" height="215" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
         </section>
     </section>
     <footer>

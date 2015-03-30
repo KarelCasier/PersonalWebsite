@@ -25,6 +25,8 @@ p
     color: rgba(26,26,26,.7);
 }
 
+
+
 p a
 {
     text-decoration: none;
@@ -168,6 +170,12 @@ p a:hover
     font-size: 150%;
     left: 30px;
     position: absolute;
+}
+
+#headerName a
+{
+    text-decoration: none;
+    color: white;
 }
 
 body
